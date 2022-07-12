@@ -41,8 +41,10 @@
 .hero{
     background-attachment: fixed;
     background-image: url("https://lh3.googleusercontent.com/p/AF1QipOXyXjGS-sZkLxv04aMWIkYGtTYOS4O1dQHTUfJ=w1080-h608-p-no-v0");
-    height: 200vh;
+    height: 300vh;
     background-size: cover;
+    width: 100%;
+    /* filter: blur(1000rem); */
     /* background-repeat: no-repeat; */
 }
 
@@ -50,9 +52,37 @@
     margin: 15vh 0vh 10vh 0vh;
 }
 
+#phone-number{
+    margin-bottom: 25vh;
+}
+
 /* HERO SECTION END */
 
 /* <!-- UPDATE SECTION STARTS HERE --> */
+#updates{
+    margin: 5vh 0vh 10vh 0vh;
+    color: #e73487;
+}
+#img-target{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#gallery{
+  
+    background-color: black;
+    height: 600px;
+  width: 100%;
+    
+}
+
+#updateImages{
+    height: 300px;
+}
+.card{
+    background-color: black;
+    color: white;
+}
 /* <!-- UPDATE SECTION ENDS HERE --> */
 
 /* <!-- MENU SECTION STARTS HERE -->

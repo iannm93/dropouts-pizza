@@ -29,7 +29,7 @@
                                 <a class="nav-link" href="#">Review</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Gallery</a>
+                                <a class="nav-link" href="#gallery">Gallery</a>
                             </li>
                             <li class="nav-item" id="contact">
                                 <a class="nav-link">Contact</a>
@@ -51,25 +51,36 @@
                 </div>
             </div>
                 <h4 class="text-center">your personal pizza caterer<h4>
-                    <h1 class="text-center">760-566-5474</h1>
+                    <h1 id ="phone-number" class="text-center">760-566-5474</h1>
+                    <!-- UPDATE SECTION STARTS HERE -->
+                    <div class="row">
+                      
+                      <div  id="gallery">
+                          <h2  id ="updates" class="text-center">UPDATES</h2>
+                          <div id ="img-target"></div>
+
+                      </div>
+                    
+                    </div>
+                    <!-- UPDATE SECTION ENDS HERE -->
+                  
+
+                    <!-- MENU SECTION STARTS HERE -->
+                    <!-- MENU SECTION ENDS HERE -->
+            
+                    <!-- REVIEW SECTION STARTS HERE -->
+                    <!-- REVIEW SECTION ENDS HERE -->
+            
+                    <!-- GALLERY SECTION STARTS HERE -->
+                    <!-- GALLERY SECTION ENDS HERE -->
+            
+            
+                    <!-- CONTACT SECTION STARTS HERE -->
+                    <!-- CONTACT SECTION ENDS HERE -->
         </section>
         <!-- HERO SECTION ENDS HERE -->
 
-        <!-- UPDATE SECTION STARTS HERE -->
-        <!-- UPDATE SECTION ENDS HERE -->
 
-        <!-- MENU SECTION STARTS HERE -->
-        <!-- MENU SECTION ENDS HERE -->
-
-        <!-- REVIEW SECTION STARTS HERE -->
-        <!-- REVIEW SECTION ENDS HERE -->
-
-        <!-- GALLERY SECTION STARTS HERE -->
-        <!-- GALLERY SECTION ENDS HERE -->
-
-
-        <!-- CONTACT SECTION STARTS HERE -->
-        <!-- CONTACT SECTION ENDS HERE -->
 
 
 
@@ -77,8 +88,35 @@
 
 
     </div>
+    
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '{your-app-id}',
+      cookie     : true,
+      xfbml      : true,
+      version    : '{api-version}'
+    });
+      
+    FB.AppEvents.logPageView();   
+      
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
     <script src="script.js"></script>
   </body>
 </html>
+
+<!-- 
+AQBJcJYZTFias8uAoW8SUXtNcfdpLJ8jchZ281NvD8SWyYb-RJsrCDiVOexZS8X8g6iMJtFoXOjEKTWn9jK04hyfBXfb31AUv73Fu3KjiYfE7Qjc2UY5YbCIcPq5MOTgtqcf2cCAMF7mJLt-trLp9wP048WJuovN4H8KXqcOUQaBfGIzcbxgy-oQRs-4sNpYWfitkEfgtXPfgoZnGP2Oi8L05KFkVHFAtgqFLl8J0CkKgw#_
+
+https://api.instagram.com/oauth/authorize?client_id=417360490356945&redirect_uri=https://iannm93.github.io/dropouts-pizza/&scope=user_profile,user_media&response_type=code -->
