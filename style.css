@@ -1,0 +1,70 @@
+/* #e73487  - main pink*/ 
+/* NAVBAR SECTION START */
+
+.nav-item{
+    padding-right: 15px;
+    color: white;
+}
+
+.nav-link{
+    color: white;
+}
+
+.nav-link:hover{
+    transform: scale(1.05) translateY(-1px);
+    color: #e73487;
+}
+
+.navbar-brand{
+    color: #e73487;
+    margin-left: 25px;
+    margin: 0px 0px 0px 15px
+
+}
+.navbar-brand:hover{
+    color: #e73487;
+}
+
+
+.container-fluid{
+    padding: 0;
+}
+
+#contact{
+    margin-right: 15px;
+}
+
+
+/* NAVBAR SECTION END */
+
+/* HERO SECTION START */
+.hero{
+    background-attachment: fixed;
+    background-image: url("https://lh3.googleusercontent.com/p/AF1QipOXyXjGS-sZkLxv04aMWIkYGtTYOS4O1dQHTUfJ=w1080-h608-p-no-v0");
+    height: 200vh;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+}
+
+#logo{
+    margin: 15vh 0vh 10vh 0vh;
+}
+
+/* HERO SECTION END */
+
+/* <!-- UPDATE SECTION STARTS HERE --> */
+/* <!-- UPDATE SECTION ENDS HERE --> */
+
+/* <!-- MENU SECTION STARTS HERE -->
+<!-- MENU SECTION ENDS HERE -->
+
+<!-- REVIEW SECTION STARTS HERE -->
+<!-- REVIEW SECTION ENDS HERE -->
+
+<!-- GALLERY SECTION STARTS HERE -->
+<!-- GALLERY SECTION ENDS HERE -->
+
+
+<!-- CONTACT SECTION STARTS HERE -->
+<!-- CONTACT SECTION ENDS HERE --> */
+
