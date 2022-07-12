@@ -1,6 +1,10 @@
 /* #e73487  - main pink*/ 
-/* NAVBAR SECTION START */
 
+/* NAVBAR SECTION START */
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+*{
+    font-family: 'Alfa Slab One', cursive;
+}
 .nav-item{
     padding-right: 15px;
     color: white;
