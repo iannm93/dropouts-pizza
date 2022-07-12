@@ -41,7 +41,7 @@
 .hero{
     background-attachment: fixed;
     background-image: url("https://lh3.googleusercontent.com/p/AF1QipOXyXjGS-sZkLxv04aMWIkYGtTYOS4O1dQHTUfJ=w1080-h608-p-no-v0");
-    height: 300vh;
+    height: 100%;
     background-size: cover;
     width: 100%;
     /* filter: blur(1000rem); */
@@ -85,16 +85,17 @@
 }
 /* <!-- UPDATE SECTION ENDS HERE --> */
 
-/* <!-- MENU SECTION STARTS HERE -->
-<!-- MENU SECTION ENDS HERE -->
+/* <!-- MENU SECTION STARTS HERE -->*/
 
-<!-- REVIEW SECTION STARTS HERE -->
-<!-- REVIEW SECTION ENDS HERE -->
+/* <!-- MENU SECTION ENDS HERE --> */
 
-<!-- GALLERY SECTION STARTS HERE -->
-<!-- GALLERY SECTION ENDS HERE -->
+/* <!-- REVIEW SECTION STARTS HERE --> */
+/* <!-- REVIEW SECTION ENDS HERE --> */
+
+/* <!-- GALLERY SECTION STARTS HERE --> */
+/* <!-- GALLERY SECTION ENDS HERE --> */
 
 
-<!-- CONTACT SECTION STARTS HERE -->
-<!-- CONTACT SECTION ENDS HERE --> */
+/* <!-- CONTACT SECTION STARTS HERE --> */
+/* <!-- CONTACT SECTION ENDS HERE -->  */
 
