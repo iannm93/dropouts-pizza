@@ -68,8 +68,9 @@
 #img-target {
   /* margin-left: 30px; */
   gap: 2rem;
-  display: grid;
-  grid-auto-flow: column;
+ display: grid;
+  grid-auto-flow: column; 
+
   /* grid-template-columns: 25%; */
   overflow-x: auto;
   overscroll-behavior-inline: contain;
@@ -83,10 +84,12 @@
 }
 #gallery {
   background-color: black;
-  height: 600px;
+  height: 800px;
   width: 100%;
 }
-
+#small-text{
+    font-size:14px;
+}
 #updateImages {
   height: 300px;
 }
@@ -102,6 +105,10 @@
 /* <!-- MENU SECTION ENDS HERE --> */
 
 /* <!-- REVIEW SECTION STARTS HERE --> */
+ #small{
+    height: 100px;
+    width: 100px;
+ }
 /* <!-- REVIEW SECTION ENDS HERE --> */
 
 /* <!-- GALLERY SECTION STARTS HERE --> */
