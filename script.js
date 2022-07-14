@@ -10,7 +10,8 @@ console.log(response)
 let allImages = []
 for (let i = 0 ; i<response.data.length; i++){
     let eachImage = `  
-    <div class="card" style="width: 18rem;">
+    <div id="card" class="card" style="width: 18rem;">
+    
     <img src="${response.data[i].media_url}" class="card-img-top" alt="...">
     <div class="card-body">
       <p class="card-text text-center">${response.data[i].caption}</p>
@@ -73,3 +74,5 @@ instagram();
 
 // console.log(gallery)
 // }
+
+console.log(typeof(42.1))

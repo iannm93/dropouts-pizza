@@ -1,92 +1,100 @@
-/* #e73487  - main pink*/ 
+/* #e73487  - main pink*/
 
 /* NAVBAR SECTION START */
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
-*{
-    font-family: 'Alfa Slab One', cursive;
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+* {
+  font-family: "Alfa Slab One", cursive;
 }
-.nav-item{
-    padding-right: 15px;
-    color: white;
-}
-
-.nav-link{
-    color: white;
+.nav-item {
+  padding-right: 15px;
+  color: white;
 }
 
-.nav-link:hover{
-    transform: scale(1.05) translateY(-1px);
-    color: #e73487;
+.nav-link {
+  color: white;
 }
 
-.navbar-brand{
-    color: #e73487;
-    margin-left: 25px;
-    margin: 0px 0px 0px 15px
-
-}
-.navbar-brand:hover{
-    color: #e73487;
+.nav-link:hover {
+  transform: scale(1.05) translateY(-1px);
+  color: #e73487;
 }
 
-
-.container-fluid{
-    padding: 0;
+.navbar-brand {
+  color: #e73487;
+  margin-left: 25px;
+  margin: 0px 0px 0px 15px;
+}
+.navbar-brand:hover {
+  color: #e73487;
 }
 
-#contact{
-    margin-right: 15px;
+.container-fluid {
+  padding: 0;
 }
 
+#contact {
+  margin-right: 15px;
+}
 
 /* NAVBAR SECTION END */
 
 /* HERO SECTION START */
-.hero{
-    background-attachment: fixed;
-    background-image: url("https://lh3.googleusercontent.com/p/AF1QipOXyXjGS-sZkLxv04aMWIkYGtTYOS4O1dQHTUfJ=w1080-h608-p-no-v0");
-    height: 100%;
-    background-size: cover;
-    width: 100%;
-    /* filter: blur(1000rem); */
-    /* background-repeat: no-repeat; */
+.hero {
+  background-attachment: fixed;
+  background-image: url("https://lh3.googleusercontent.com/p/AF1QipOXyXjGS-sZkLxv04aMWIkYGtTYOS4O1dQHTUfJ=w1080-h608-p-no-v0");
+  height: 100%;
+  background-size: cover;
+  width: 100%;
+  /* filter: blur(1000rem); */
+  /* background-repeat: no-repeat; */
 }
 
-#logo{
-    margin: 15vh 0vh 10vh 0vh;
+#logo {
+  margin: 15vh 0vh 10vh 0vh;
 }
 
-#phone-number{
-    margin-bottom: 25vh;
+#phone-number {
+  margin-bottom: 25vh;
 }
 
 /* HERO SECTION END */
 
 /* <!-- UPDATE SECTION STARTS HERE --> */
-#updates{
-    margin: 5vh 0vh 10vh 0vh;
-    color: #e73487;
+#updates {
+  margin-bottom: 10vh;
+  padding-top: 5vh;
+  color: #e73487;
 }
-#img-target{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#img-target {
+  /* margin-left: 30px; */
+  gap: 2rem;
+  display: grid;
+  grid-auto-flow: column;
+  /* grid-template-columns: 25%; */
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
 }
-#gallery{
-  
-    background-color: black;
-    height: 600px;
+#img-target > * {
+    scroll-snap-align: center;
+}
+#card {
+  /* margin: 2rem; */
+}
+#gallery {
+  background-color: black;
+  height: 600px;
   width: 100%;
-    
 }
 
-#updateImages{
-    height: 300px;
+#updateImages {
+  height: 300px;
 }
-.card{
-    background-color: black;
-    color: white;
+.card {
+  background-color: black;
+  color: white;
 }
+
 /* <!-- UPDATE SECTION ENDS HERE --> */
 
 /* <!-- MENU SECTION STARTS HERE -->*/
@@ -99,7 +107,5 @@
 /* <!-- GALLERY SECTION STARTS HERE --> */
 /* <!-- GALLERY SECTION ENDS HERE --> */
 
-
 /* <!-- CONTACT SECTION STARTS HERE --> */
 /* <!-- CONTACT SECTION ENDS HERE -->  */
-
