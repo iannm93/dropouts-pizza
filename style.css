@@ -105,10 +105,11 @@
 /* <!-- MENU SECTION ENDS HERE --> */
 
 /* <!-- REVIEW SECTION STARTS HERE --> */
- #small{
-    height: 100px;
-    width: 100px;
- }
+#star-target{
+    height: 20px;
+    width: 30px;
+}
+
 /* <!-- REVIEW SECTION ENDS HERE --> */
 
 /* <!-- GALLERY SECTION STARTS HERE --> */
