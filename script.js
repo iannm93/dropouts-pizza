@@ -1,9 +1,18 @@
 let gallery = document.querySelector("#gallery");
 let galleryImage = document.querySelector(".galleryImage");
 let imageTarget = document.getElementById("img-target");
-let reviewBody = document.getElementById("review-body")
-let starContainer = document.getElementById("star-container")
-let nameTarget = document.getElementById("name-target")
+let reviewBody = document.getElementById("review-body");
+let starContainer = document.getElementById("star-container");
+let nameTarget = document.getElementById("name-target");
+let nameTargetOne = document.getElementById("name-target-1")
+let reviewBodyOne = document.getElementById("review-body-1")
+let starContainerOne = document.getElementById("star-container-1");
+let nameTargetTwo = document.getElementById("name-target-2")
+let reviewBodyTwo = document.getElementById("review-body-2")
+let starContainerTwo = document.getElementById("star-container-2");
+let nameTargetThree = document.getElementById("name-target-3")
+let reviewBodyThree = document.getElementById("review-body-3")
+let starContainerThree = document.getElementById("star-container-3");
 
 let reviews = [
   {
@@ -24,76 +33,121 @@ let reviews = [
   {
     text: "Fredo is the best. He provides amazing service and even more amazing food with all fresh ingredients.",
     star: 5,
-    name: "- Alondra A."
+    name: "- Alondra A.",
   },
   {
-    text:"So we decided to drive by our favorite brewery's second location and seen they were open. ( Never know lately) and Dropout Pizza was serving. Very light and tasty crust with fresh ingredients. We ordered a second one. Yeah, that good. Expect a nice small pie here. So you can order a few different ones. 5 stars.",
+    text: "So we decided to drive by our favorite brewery's second location and seen they were open. ( Never know lately) and Dropout Pizza was serving. Very light and tasty crust with fresh ingredients. We ordered a second one. Yeah, that good. Expect a nice small pie here. So you can order a few different ones. 5 stars.",
     star: 5,
-    name: "- Jim E."
+    name: "- Jim E.",
   },
   {
-    text:"If you're looking for a great Pizza place in Escondido and nearby areas, i'd highly recommend to go to Dropout Pizza! The pizza is delicious and the quality is superb! Don't miss out on this place!",
-    star:5,
-    name:"- Paul D."
-
-  },
-  {
-    text:"I used Fredo and Dropout for a dealer event we sponsored last October. They were a hit! Everyone got 3rds, the pizzas were amazing. Very friendly service, showed up on time at our location, and got wood fired pizzas going right away. We will definitely use them again- without question. I usually do street tacos, but this was much more popular with my dealers. Thanks again Fredo!",
+    text: "If you're looking for a great Pizza place in Escondido and nearby areas, i'd highly recommend to go to Dropout Pizza! The pizza is delicious and the quality is superb! Don't miss out on this place!",
     star: 5,
-    name: "- Sam S."
+    name: "- Paul D.",
+  },
+  {
+    text: "I used Fredo and Dropout for a dealer event we sponsored last October. They were a hit! Everyone got 3rds, the pizzas were amazing. Very friendly service, showed up on time at our location, and got wood fired pizzas going right away. We will definitely use them again- without question. I usually do street tacos, but this was much more popular with my dealers. Thanks again Fredo!",
+    star: 5,
+    name: "- Sam S.",
   },
 ];
 
-
-for (let i =0; i<reviews.length; i++){
-  console.log(reviews[i].text.length)
+for (let i = 0; i < reviews.length; i++) {
+  console.log(reviews[i].text.length);
 }
-
-
-let reviewGenerator = function(){
-
-let randomReview = reviews[Math.floor(Math.random()*reviews.length)]
-if(randomReview.star ===5){
-  starContainer.innerHTML = `<img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
+ 
+let reviewGenerator = function () {
+  let randomReviewOne = reviews[Math.floor(Math.random()*reviews.length)]
+let randomReviewTwo = reviews[Math.floor(Math.random()*reviews.length)]
+let randomReviewThree = reviews[Math.floor(Math.random()*reviews.length)]
+  let randomReview = reviews[Math.floor(Math.random() * reviews.length)];
+  if (randomReview.star === 5) {
+    starContainer.innerHTML = `<img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
   <img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
   <img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
   <img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
   <img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
-  `
-}
-
-nameTarget.textContent = randomReview.name
-nameTarget.style.opacity=0
-
-starContainer.style.opacity = 0
-if(randomReview.text.length < 315){
-  reviewBody.style.textAlign = "center"
-} else reviewBody.style.textAlign ="start"
-reviewBody.textContent = randomReview.text
-reviewBody.style.opacity = 0
-console.log(reviewBody)
-
-}
-let opacityFade = function(){
-  let reviewOpacity = Number(window.getComputedStyle(reviewBody).getPropertyValue("opacity"))
-  if (reviewBody.style.opacity <= 1){
-    reviewOpacity = reviewOpacity +.05
-    reviewBody.style.opacity = reviewOpacity
+  `;
   }
-  let nameOpacity = Number(window.getComputedStyle(nameTarget).getPropertyValue("opacity"))
-  if (nameTarget.style.opacity <= 1){
-    nameOpacity = nameOpacity +.05
-    nameTarget.style.opacity = nameOpacity
+// ----------------------RANDOM REVIEW 1-----------------------
+  if (randomReviewOne.star === 5) {
+    starContainerOne.innerHTML = `<img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
+  <img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
+  <img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
+  <img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
+  <img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
+  `;
   }
-  let starOpacity = Number(window.getComputedStyle(starContainer).getPropertyValue("opacity"))
-  if (starContainer.style.opacity <= 1){
-    starOpacity = starOpacity +.05
-    starContainer.style.opacity = starOpacity
+  nameTargetOne.textContent = randomReviewOne.name
+  nameTargetOne.style.opacity = 0
+  starContainerOne.style.opacity= 0
+  reviewBodyOne.textContent = randomReviewOne.text
+  reviewBodyOne.style.opacity = 0
+// ------------RANDOM REVIEW 2-------------------------
+  if (randomReviewTwo.star === 5) {
+    starContainerTwo.innerHTML = `<img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
+  <img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
+  <img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
+  <img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
+  <img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
+  `;
   }
-
+  nameTargetTwo.textContent = randomReviewTwo.name
+  nameTargetTwo.style.opacity = 0
+  starContainerTwo.style.opacity= 0
+  reviewBodyTwo.textContent = randomReviewTwo.text
+  reviewBodyTwo.style.opacity = 0
+// --------------------RANDOM REVIEW 3-----------------------------------------------
+if (randomReviewThree.star === 5) {
+  starContainerThree.innerHTML = `<img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
+<img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
+<img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
+<img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
+<img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
+`;
 }
-setInterval(reviewGenerator, 3000)
-setInterval(opacityFade,100)
+nameTargetThree.textContent = randomReviewThree.name
+nameTargetThree.style.opacity = 0
+starContainerThree.style.opacity= 0
+reviewBodyThree.textContent = randomReviewThree.text
+reviewBodyThree.style.opacity = 0
+// -----------------------------------------------------------------
+
+
+
+  nameTarget.textContent = randomReview.name;
+  nameTarget.style.opacity = 0;
+
+  starContainer.style.opacity = 0;
+  if (randomReview.text.length < 315) {
+    reviewBody.style.textAlign = "center";
+  } else reviewBody.style.textAlign = "start";
+  reviewBody.textContent = randomReview.text;
+  reviewBody.style.opacity = 0;
+  console.log(reviewBody);
+};
+let opacityFade = function () {
+  let fadeOpacity = Number(
+    window.getComputedStyle(reviewBody).getPropertyValue("opacity")
+  );
+  if (reviewBody.style.opacity <= 1) {
+    fadeOpacity = fadeOpacity + 0.005;
+    reviewBody.style.opacity = fadeOpacity;
+    nameTarget.style.opacity = fadeOpacity;
+    starContainer.style.opacity = fadeOpacity;
+    reviewBodyOne.style.opacity = fadeOpacity;
+    nameTargetOne.style.opacity = fadeOpacity;
+    starContainerOne.style.opacity = fadeOpacity;
+    reviewBodyTwo.style.opacity = fadeOpacity;
+    nameTargetTwo.style.opacity = fadeOpacity;
+    starContainerTwo.style.opacity = fadeOpacity;
+    reviewBodyThree.style.opacity = fadeOpacity;
+    nameTargetThree.style.opacity = fadeOpacity;
+    starContainerThree.style.opacity = fadeOpacity;
+  }
+};
+setInterval(reviewGenerator, 3000);
+setInterval(opacityFade, 10);
 
 // query params for yelp API
 // https://api.yelp.com/v3/businesses/ct27inqcT971zbGcxqp-qA/reviews
@@ -124,15 +178,6 @@ async function instagram() {
 
     allImages.push(eachImage);
     imageTarget.innerHTML = allImages;
-
-    // let igimg = document.createElement("img")
-    // igimg.src = response.data[i].media_url
-    // console.log(igimg)
-    // igimg.style.height = "300px"
-
-    // igimg.style.padding = "15px"
-    // igimg.className = "img-fluid"
-    // gallery.append(igimg)
   }
   console.log(allImages);
 
@@ -140,10 +185,6 @@ async function instagram() {
 }
 
 instagram();
-
-// IGQVJYS3NiUkx0N0ZAlajVSZAGpzamtUd1JNMlI2S2NYRzQwSmx2bWx3MEtKOXlxSkdMM0VrREYwRGhxX2FhUzdiRlVNcHF0aVlRUzduQS14bkNVT2FVbC1pM045Mnk2TlFwTy0zazduVUxmenJzZAmlQWQZDZD
-
-// permalink,media_url,
 
 // const instagram = async () =>{
 
@@ -162,13 +203,3 @@ instagram();
 //         </div>
 
 // `
-
-// allImages.push(eachImage)
-// imageTarget.innerHTML= allImages
-
-// }
-// console.log(allImages)
-
-// console.log(gallery)
-// }
-

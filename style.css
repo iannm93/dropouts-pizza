@@ -67,7 +67,7 @@
 }
 #img-target {
   /* margin-left: 30px; */
-  gap: 2rem;
+  gap: 1rem;
  display: grid;
   grid-auto-flow: column; 
 
@@ -106,10 +106,19 @@
 
 /* <!-- REVIEW SECTION STARTS HERE --> */
 #star-target{
-    height: 20px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
 }
 
+.review-box{
+    margin-top: 20px;
+    height: 570px;
+    background-color: black;
+}
+
+#r-color{
+    color: #e73487;
+}
 /* <!-- REVIEW SECTION ENDS HERE --> */
 
 /* <!-- GALLERY SECTION STARTS HERE --> */
