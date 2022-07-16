@@ -13,6 +13,20 @@ let starContainerTwo = document.getElementById("star-container-2");
 let nameTargetThree = document.getElementById("name-target-3")
 let reviewBodyThree = document.getElementById("review-body-3")
 let starContainerThree = document.getElementById("star-container-3");
+let seeMore = document.getElementById("see-more")
+let leaveReview = document.getElementById("leave-review")
+
+let seeMoreReviews = () =>{
+  window.location.href ="https://www.google.com/search?q=google+reviews+drop+outs+pizza&rlz=1C1CHBF_enUS866US866&oq=google+reviews+drop+outs+pizza&aqs=chrome..69i57j69i64.6013j0j7&sourceid=chrome&ie=UTF-8#lrd=0x80dbf56fd14d3803:0x763af43311db62ae,1,,,"
+}
+let writeReview = () =>{
+  window.location.href ="https://www.google.com/search?q=google+reviews+drop+outs+pizza&rlz=1C1CHBF_enUS866US866&oq=google+reviews+drop+outs+pizza&aqs=chrome..69i57j69i64.6013j0j7&sourceid=chrome&ie=UTF-8#lrd=0x80dbf56fd14d3803:0x763af43311db62ae,3,,,"
+}
+
+leaveReview.addEventListener("click", writeReview)
+seeMore.addEventListener("click", seeMoreReviews)
+
+
 
 let reviews = [
   {

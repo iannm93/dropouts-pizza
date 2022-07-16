@@ -119,6 +119,47 @@
 #r-color{
     color: #e73487;
 }
+
+#border{
+   outline: 10px solid black
+   
+}
+#options{
+    margin-top: 7rem;
+}
+#main{
+    color: #e73487;
+}
+#line{
+    width: 3px;
+    height: 20px;
+    background-color: #e73487;
+    color: #e73487;
+}
+
+#see-more{
+    color: #e73487;
+
+
+}
+
+#see-more:hover{
+    cursor: pointer;
+    transform: scale(1.02) translateY(-1px)
+
+
+}
+
+#leave-review{
+    color: #e73487;
+
+}
+
+#leave-review:hover{
+    cursor: pointer;
+    transform: scale(1.02) translateY(-1px)
+}
+
 /* <!-- REVIEW SECTION ENDS HERE --> */
 
 /* <!-- GALLERY SECTION STARTS HERE --> */
