@@ -15,6 +15,7 @@ let reviewBodyThree = document.getElementById("review-body-3")
 let starContainerThree = document.getElementById("star-container-3");
 let seeMore = document.getElementById("see-more")
 let leaveReview = document.getElementById("leave-review")
+let galleryContainer = document.getElementById("gallery-container")
 
 let seeMoreReviews = () =>{
   window.location.href ="https://www.google.com/search?q=google+reviews+drop+outs+pizza&rlz=1C1CHBF_enUS866US866&oq=google+reviews+drop+outs+pizza&aqs=chrome..69i57j69i64.6013j0j7&sourceid=chrome&ie=UTF-8#lrd=0x80dbf56fd14d3803:0x763af43311db62ae,1,,,"
@@ -69,37 +70,37 @@ let reviews = [
 for (let i = 0; i < reviews.length; i++) {
   console.log(reviews[i].text.length);
 }
- 
+
 let reviewGenerator = function () {
   let randomReviewOne = reviews[Math.floor(Math.random()*reviews.length)]
-let randomReviewTwo = reviews[Math.floor(Math.random()*reviews.length)]
+  let randomReviewTwo = reviews[Math.floor(Math.random()*reviews.length)]
 let randomReviewThree = reviews[Math.floor(Math.random()*reviews.length)]
-  let randomReview = reviews[Math.floor(Math.random() * reviews.length)];
-  if (randomReview.star === 5) {
-    starContainer.innerHTML = `<img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
+let randomReview = reviews[Math.floor(Math.random() * reviews.length)];
+if (randomReview.star === 5) {
+  starContainer.innerHTML = `<img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
   <img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
   <img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
   <img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
   <img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
   `;
-  }
+}
 // ----------------------RANDOM REVIEW 1-----------------------
-  if (randomReviewOne.star === 5) {
-    starContainerOne.innerHTML = `<img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
+if (randomReviewOne.star === 5) {
+  starContainerOne.innerHTML = `<img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
   <img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
   <img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
   <img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
   <img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
   `;
-  }
-  nameTargetOne.textContent = randomReviewOne.name
-  nameTargetOne.style.opacity = 0
-  starContainerOne.style.opacity= 0
-  reviewBodyOne.textContent = randomReviewOne.text
-  reviewBodyOne.style.opacity = 0
+}
+nameTargetOne.textContent = randomReviewOne.name
+nameTargetOne.style.opacity = 0
+starContainerOne.style.opacity= 0
+reviewBodyOne.textContent = randomReviewOne.text
+reviewBodyOne.style.opacity = 0
 // ------------RANDOM REVIEW 2-------------------------
-  if (randomReviewTwo.star === 5) {
-    starContainerTwo.innerHTML = `<img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
+if (randomReviewTwo.star === 5) {
+  starContainerTwo.innerHTML = `<img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
   <img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
   <img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
   <img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
@@ -111,28 +112,28 @@ let randomReviewThree = reviews[Math.floor(Math.random()*reviews.length)]
   starContainerTwo.style.opacity= 0
   reviewBodyTwo.textContent = randomReviewTwo.text
   reviewBodyTwo.style.opacity = 0
-// --------------------RANDOM REVIEW 3-----------------------------------------------
-if (randomReviewThree.star === 5) {
-  starContainerThree.innerHTML = `<img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
-<img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
-<img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
-<img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
-<img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
-`;
-}
-nameTargetThree.textContent = randomReviewThree.name
-nameTargetThree.style.opacity = 0
-starContainerThree.style.opacity= 0
-reviewBodyThree.textContent = randomReviewThree.text
+  // --------------------RANDOM REVIEW 3-----------------------------------------------
+  if (randomReviewThree.star === 5) {
+    starContainerThree.innerHTML = `<img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
+    <img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
+    <img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
+    <img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
+    <img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
+    `;
+  }
+  nameTargetThree.textContent = randomReviewThree.name
+  nameTargetThree.style.opacity = 0
+  starContainerThree.style.opacity= 0
+  reviewBodyThree.textContent = randomReviewThree.text
 reviewBodyThree.style.opacity = 0
 // -----------------------------------------------------------------
 
 
 
-  nameTarget.textContent = randomReview.name;
-  nameTarget.style.opacity = 0;
+nameTarget.textContent = randomReview.name;
+nameTarget.style.opacity = 0;
 
-  starContainer.style.opacity = 0;
+starContainer.style.opacity = 0;
   if (randomReview.text.length < 315) {
     reviewBody.style.textAlign = "center";
   } else reviewBody.style.textAlign = "start";
@@ -143,14 +144,14 @@ reviewBodyThree.style.opacity = 0
 let opacityFade = function () {
   let fadeOpacity = Number(
     window.getComputedStyle(reviewBody).getPropertyValue("opacity")
-  );
-  if (reviewBody.style.opacity <= 1) {
-    fadeOpacity = fadeOpacity + 0.005;
-    reviewBody.style.opacity = fadeOpacity;
-    nameTarget.style.opacity = fadeOpacity;
-    starContainer.style.opacity = fadeOpacity;
-    reviewBodyOne.style.opacity = fadeOpacity;
-    nameTargetOne.style.opacity = fadeOpacity;
+    );
+    if (reviewBody.style.opacity <= 1) {
+      fadeOpacity = fadeOpacity + 0.005;
+      reviewBody.style.opacity = fadeOpacity;
+      nameTarget.style.opacity = fadeOpacity;
+      starContainer.style.opacity = fadeOpacity;
+      reviewBodyOne.style.opacity = fadeOpacity;
+      nameTargetOne.style.opacity = fadeOpacity;
     starContainerOne.style.opacity = fadeOpacity;
     reviewBodyTwo.style.opacity = fadeOpacity;
     nameTargetTwo.style.opacity = fadeOpacity;
@@ -163,35 +164,66 @@ let opacityFade = function () {
 setInterval(reviewGenerator, 3000);
 setInterval(opacityFade, 10);
 
+
 // query params for yelp API
 // https://api.yelp.com/v3/businesses/ct27inqcT971zbGcxqp-qA/reviews
 
 // authorization for headers
 // XZR6vdKcPk0t6_gS6id7Kg8lfsBsWj1VVlhH9NeddjVJcCzfsfDm6kMJIN7K0viaoh2Nf7VcTRlmjOLmArJyHcsuJtf7bFsd2HG9gw10JcSqQKKdfYnYx
 
-async function instagram() {
+async function instagram(event) {
   const url =
-    "https://graph.instagram.com/me/media?fields=id,caption,permalink,media_url&access_token=IGQVJYS3NiUkx0N0ZAlajVSZAGpzamtUd1JNMlI2S2NYRzQwSmx2bWx3MEtKOXlxSkdMM0VrREYwRGhxX2FhUzdiRlVNcHF0aVlRUzduQS14bkNVT2FVbC1pM045Mnk2TlFwTy0zazduVUxmenJzZAmlQWQZDZD";
+  "https://graph.instagram.com/me/media?fields=id,caption,permalink,media_url&access_token=IGQVJYS3NiUkx0N0ZAlajVSZAGpzamtUd1JNMlI2S2NYRzQwSmx2bWx3MEtKOXlxSkdMM0VrREYwRGhxX2FhUzdiRlVNcHF0aVlRUzduQS14bkNVT2FVbC1pM045Mnk2TlFwTy0zazduVUxmenJzZAmlQWQZDZD";
   let data = await fetch(url);
   let response = await data.json();
-  console.log(response);
-  response.data[0].media_url.className = "shit";
-  response.data[response.data.length - 1].className = "fuck";
-  let allImages = [];
-  for (let i = 0; i < response.data.length; i++) {
+  console.log(response)
+  let goToInstagram = (event) => {
+    let elementClicked = event.target;
+    
+    console.log(elementClicked)
+    for(let j=0;j<response.data.length; j++){
+      if (elementClicked.src === response.data[j].media_url || elementClicked.textContent === response.data[j].caption){
+            window.location.href = `${response.data[j].permalink}`
+        }
+      }
+      
+    }
+    
+    console.log(response);
+    let galleryImages =[]
+    let allImages = [];
+    for (let i = 0; i < response.data.length; i++) {
     let eachImage = `  
     <div id="card" class="card" style="width: 18rem;">
     
-    <img src="${response.data[i].media_url}" class="card-img-top" alt="...">
+    <img id="specific-image" src="${response.data[i].media_url}" class="card-img-top" alt="...">
     <div class="card-body">
-      <p id="small-text" class= "text-start">guys!! 2 chances to get your flatbreadfix... you can be cool and come see @bigoemeffer at @purebrewingvista or @groovncoogan in san marcos at @wildbarrelbrewing. it's up to you but you know where the parties at!</p>
+    <p id="small-text" class= "text-start">${response.data[i].caption}</p>
     </div>
-  </div>
-  
-`;
+    </div>
+    `
 
-    allImages.push(eachImage);
-    imageTarget.innerHTML = allImages;
+
+      gallery.addEventListener("click", goToInstagram)
+    // let smallText = document.getElementById("small-text")
+    // imageTarget.addEventListener("click", goToInstagram)
+    // smallText.addEventListener("click", goToInstagram)
+    
+  let images = `
+  <div class="col-lg-3">
+                        
+  <img src ="${response.data[i].media_url}" id="gallery-pictures"/>
+  
+  </div>
+  `
+  console.log(images)
+
+
+;
+galleryImages.push(images)
+allImages.push(eachImage);
+imageTarget.innerHTML = allImages;
+galleryContainer.innerHTML =galleryImages
   }
   console.log(allImages);
 

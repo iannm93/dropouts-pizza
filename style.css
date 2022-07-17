@@ -98,6 +98,16 @@
   color: white;
 }
 
+#specific-image:hover{
+    cursor:pointer;
+    transform: translateY(-1px) scale(1.01)
+}
+
+#small-text:hover{
+    cursor:pointer;
+    transform: scale(1.01) translateY(-1px)
+}
+
 /* <!-- UPDATE SECTION ENDS HERE --> */
 
 /* <!-- MENU SECTION STARTS HERE -->*/
@@ -163,6 +173,23 @@
 /* <!-- REVIEW SECTION ENDS HERE --> */
 
 /* <!-- GALLERY SECTION STARTS HERE --> */
+#gallery-pictures{
+   margin-top: 10rem;
+    height: 500px;
+    width: 500px;
+
+}
+
+#gallery-hw{
+    height: 600px;
+    background-color: black;
+    width: 100%;
+}
+
+#specific-image:hover{
+    cursor:pointer;
+    transform: translateY(-1px) scale(1.01)
+}
 /* <!-- GALLERY SECTION ENDS HERE --> */
 
 /* <!-- CONTACT SECTION STARTS HERE --> */
