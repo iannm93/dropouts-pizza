@@ -72,7 +72,7 @@ for (let i = 0; i < reviews.length; i++) {
 }
 
 let reviewGenerator = function () {
-  let randomReviewOne = reviews[Math.floor(Math.random()*reviews.length)]
+let randomReviewOne = reviews[Math.floor(Math.random()*reviews.length)]
   let randomReviewTwo = reviews[Math.floor(Math.random()*reviews.length)]
 let randomReviewThree = reviews[Math.floor(Math.random()*reviews.length)]
 let randomReview = reviews[Math.floor(Math.random() * reviews.length)];
