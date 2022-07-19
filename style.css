@@ -7,10 +7,34 @@
 }
 body,html{
     overflow-x: hidden;
+    scrollbar-width: thin;
+   
 }
+*::-webkit-scrollbar {
+    width: 2px;
+    
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #4a4a46
+
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #e73487;
+    border-radius: 20px;
+
+  }
+
+
 .nav-item {
   padding-right: 15px;
   color: white;
+}
+
+#ig-link{
+    cursor: pointer;
+    color: white;
 }
 
 .nav-link {
@@ -60,19 +84,29 @@ body,html{
   margin-bottom: 25vh;
 }
 
+#phone-number:hover{
+    cursor:pointer
+}
+
 /* HERO SECTION END */
 
 /* <!-- UPDATE SECTION STARTS HERE --> */
 #updates {
-  margin-bottom: 10vh;
-  padding-top: 5vh;
+ 
   color: #e73487;
+  /* scroll-behavior: smooth; */
+}
+
+.updates-and-ig{
+    margin-bottom: 10vh;
+    padding-top: 5vh;
 }
 #img-target {
   /* margin-left: 30px; */
-  gap: 1rem;
+  gap: .8rem;
  display: grid;
   grid-auto-flow: column; 
+  /* scroll-behavior: smooth; */
 
   /* grid-template-columns: 25%; */
   overflow-x: auto;
@@ -89,6 +123,7 @@ body,html{
   background-color: black;
   height: 800px;
   width: 100%;
+  
 }
 #small-text{
     font-size:14px;
