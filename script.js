@@ -1,9 +1,6 @@
+// import reviewss from "./API"
 let gallery = document.querySelector("#gallery");
-let galleryImage = document.querySelector(".galleryImage");
 let imageTarget = document.getElementById("img-target");
-let reviewBody = document.getElementById("review-body");
-let starContainer = document.getElementById("star-container");
-let nameTarget = document.getElementById("name-target");
 let nameTargetOne = document.getElementById("name-target-1");
 let reviewBodyOne = document.getElementById("review-body-1");
 let starContainerOne = document.getElementById("star-container-1");
@@ -15,7 +12,6 @@ let reviewBodyThree = document.getElementById("review-body-3");
 let starContainerThree = document.getElementById("star-container-3");
 let seeMore = document.getElementById("see-more");
 let leaveReview = document.getElementById("leave-review");
-let galleryContainer = document.getElementById("gallery-container");
 let instagramInUpdate = document.getElementById("ig-link");
 let phoneNumber = document.getElementById("phone-number")
 
