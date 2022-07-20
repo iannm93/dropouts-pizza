@@ -8,21 +8,24 @@
 body,html{
     overflow-x: hidden;
     scrollbar-width: thin;
+    cursor: url("./images/pizza_mouse_big_outline.png") 16 0,auto;
    
 }
 *::-webkit-scrollbar {
     width: 2px;
+    height: 5px;
     
   }
 
   *::-webkit-scrollbar-track {
-    background: #4a4a46
+    /* background: #4a4a46 */
+    background-color: black;
 
   }
 
   *::-webkit-scrollbar-thumb {
     background-color: #e73487;
-    border-radius: 20px;
+    border-radius: 30px;
 
   }
 
@@ -33,7 +36,7 @@ body,html{
 }
 
 #ig-link{
-    cursor: pointer;
+    cursor: url("./images/pizza_mouse_hover.png") 16 0,auto;
     color: white;
 }
 
@@ -62,30 +65,42 @@ body,html{
 #contact {
   margin-right: 15px;
 }
+.navbar{
+    background-color: black;
+}
+.navbar-toggler{
+    background-color: #e73487;
+}
 
 /* NAVBAR SECTION END */
 
 /* HERO SECTION START */
 .hero {
   background-attachment: fixed;
-  background-image: url("https://lh3.googleusercontent.com/p/AF1QipOXyXjGS-sZkLxv04aMWIkYGtTYOS4O1dQHTUfJ=w1080-h608-p-no-v0");
+  background-image: url("./images/dropoutsPizza_blur.png");
   height: 100%;
   background-size: cover;
   width: 100%;
   /* filter: blur(1000rem); */
   /* background-repeat: no-repeat; */
 }
-
+#black{
+    color: black;
+}
 #logo {
   margin: 15vh 0vh 10vh 0vh;
 }
-
+#phone-number:hover{
+    transform: scale(1.02) translateY(-2px)
+}
 #phone-number {
   margin-bottom: 25vh;
+  color: black;
 }
 
 #phone-number:hover{
-    cursor:pointer
+    cursor: url("./images/pizza_mouse_hover.png") 16 0,auto;
+
 }
 
 /* HERO SECTION END */
@@ -137,18 +152,23 @@ body,html{
 }
 
 #specific-image:hover{
-    cursor:pointer;
+    cursor: url("./images/pizza_mouse_hover.png") 16 0,auto;
+
     transform: translateY(-1px) scale(1.01)
 }
 
 #small-text:hover{
-    cursor:pointer;
+    cursor: url("./images/pizza_mouse_hover.png") 16 0,auto;
+
     transform: scale(1.01) translateY(-1px)
 }
 
 /* <!-- UPDATE SECTION ENDS HERE --> */
 
 /* <!-- MENU SECTION STARTS HERE -->*/
+#menu-container{
+    margin: 8rem 0rem 8rem 0rem;
+}
 
 /* <!-- MENU SECTION ENDS HERE --> */
 
@@ -192,7 +212,9 @@ body,html{
 }
 
 #see-more:hover{
-    cursor: pointer;
+    
+    cursor: url("./images/pizza_mouse_hover.png") 16 0,auto;
+
     transform: scale(1.02) translateY(-1px)
 
 
@@ -204,7 +226,8 @@ body,html{
 }
 
 #leave-review:hover{
-    cursor: pointer;
+    cursor: url("./images/pizza_mouse_hover.png") 16 0,auto;
+
     transform: scale(1.02) translateY(-1px)
 }
 
@@ -217,7 +240,11 @@ body,html{
     width: 500px;
 
 }
-
+.test{
+    height: 20px;
+    width: 20px;
+    background-color: green;
+}
 #gallery-hw{
     height: 600px;
     background-color: black;
@@ -225,10 +252,12 @@ body,html{
 }
 
 #specific-image:hover{
-    cursor:pointer;
+    cursor: url("./images/pizza_mouse_hover.png") 16 0,auto;
+
     transform: translateY(-1px) scale(1.01)
 }
 /* <!-- GALLERY SECTION ENDS HERE --> */
+
 
 /* <!-- CONTACT SECTION STARTS HERE --> */
 /* <!-- CONTACT SECTION ENDS HERE -->  */
