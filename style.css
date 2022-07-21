@@ -162,7 +162,10 @@ body,html{
 
     transform: scale(1.01) translateY(-1px)
 }
+.nav-link:hover{
+    cursor: url("./images/pizza_mouse_hover.png") 16 0,auto;
 
+}
 /* <!-- UPDATE SECTION ENDS HERE --> */
 
 /* <!-- MENU SECTION STARTS HERE -->*/
