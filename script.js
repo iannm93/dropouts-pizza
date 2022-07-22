@@ -1,4 +1,5 @@
 // import reviewss from "./API"
+// QUERY SELECTORS BEGIN------------------------------
 let gallery = document.querySelector("#gallery");
 let imageTarget = document.getElementById("img-target");
 let nameTargetOne = document.getElementById("name-target-1");
@@ -13,8 +14,10 @@ let starContainerThree = document.getElementById("star-container-3");
 let seeMore = document.getElementById("see-more");
 let leaveReview = document.getElementById("leave-review");
 let instagramInUpdate = document.getElementById("ig-link");
-let phoneNumber = document.getElementById("phone-number")
+let phoneNumber = document.getElementById("phone-number");
+// QUERY SELECTORS END------------------------------------
 
+// REDIRECT FUNCTIONS BEGIN--------------------------------
 let igLinkForUpdate = () => {
   window.open("https://www.instagram.com/dropoutspizza/");
 };
@@ -29,16 +32,18 @@ let writeReview = () => {
     "https://www.google.com/search?q=google+reviews+drop+outs+pizza&rlz=1C1CHBF_enUS866US866&oq=google+reviews+drop+outs+pizza&aqs=chrome..69i57j69i64.6013j0j7&sourceid=chrome&ie=UTF-8#lrd=0x80dbf56fd14d3803:0x763af43311db62ae,3,,,"
   );
 };
-let call = () =>{
+let call = () => {
   window.open(`${phoneNumber.textContent}`);
-}
+};
+// REDIRECT FUNCTIONS END-------------------------------------
 
 // ------------ START EVENT LISTENERS ------------------
-phoneNumber.addEventListener("click", call)
+phoneNumber.addEventListener("click", call);
 leaveReview.addEventListener("click", writeReview);
 seeMore.addEventListener("click", seeMoreReviews);
 instagramInUpdate.addEventListener("click", igLinkForUpdate);
 // ------------ END EVENT LISTENERS ------------------
+
 
 let reviews = [
   {
@@ -77,14 +82,13 @@ let reviews = [
     name: "- Sam S.",
   },
 ];
-
-
-
+// Function that generates 3 random reviews from the reviews array
 let reviewGenerator = function () {
   let randomReviewOne = reviews[Math.floor(Math.random() * reviews.length)];
   let randomReviewTwo = reviews[Math.floor(Math.random() * reviews.length)];
   let randomReviewThree = reviews[Math.floor(Math.random() * reviews.length)];
   // ----------------------RANDOM REVIEW 1-----------------------
+  // checking the amounts of stars to decide how many stars to assign into starcontainer html
   if (randomReviewOne.star === 5) {
     starContainerOne.innerHTML = `<img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
   <img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
@@ -93,6 +97,7 @@ let reviewGenerator = function () {
   <img class= "img-fluid" id ="star-target"src="http://pluspng.com/img-png/star-png-star-vector-png-transparent-image-2000.png">
   `;
   }
+  // setting everything's opacity to 0
   nameTargetOne.textContent = randomReviewOne.name;
   nameTargetOne.style.opacity = 0;
   starContainerOne.style.opacity = 0;
@@ -130,10 +135,12 @@ let reviewGenerator = function () {
 };
 
 reviewGenerator();
+// function to gradually increase the opacity of elements when the opacity is less than 1
 let opacityFade = function () {
   let fadeOpacity = Number(
     window.getComputedStyle(reviewBodyOne).getPropertyValue("opacity")
   );
+  // if the opacity is less than 1 add .005 to all the below elements' opacity
   if (reviewBodyOne.style.opacity <= 1) {
     fadeOpacity = fadeOpacity + 0.005;
     reviewBodyOne.style.opacity = fadeOpacity;
@@ -147,7 +154,9 @@ let opacityFade = function () {
     starContainerThree.style.opacity = fadeOpacity;
   }
 };
+// 3 new tweets every 5 seconds
 setInterval(reviewGenerator, 5000);
+// +.005 opacity every 10ms
 setInterval(opacityFade, 10);
 
 // query params for yelp API
@@ -156,20 +165,23 @@ setInterval(opacityFade, 10);
 // authorization for headers
 // XZR6vdKcPk0t6_gS6id7Kg8lfsBsWj1VVlhH9NeddjVJcCzfsfDm6kMJIN7K0viaoh2Nf7VcTRlmjOLmArJyHcsuJtf7bFsd2HG9gw10JcSqQKKdfYnYx
 
-async function instagram(event) {
+async function instagram() {
   const url =
     "https://graph.instagram.com/me/media?fields=id,caption,permalink,media_url&access_token=IGQVJWaHQtR00wUzVudkRxWS1wQVcwd1l1ejlhR1RrM094NTl5Rno4QnI2aW5ibHZAmRy1Fb1puaEpaeUdJYVhVc2cycG5CcDJQQUN5aXRJMW5JVjlPbS1OcnFUdGRwVXNCYkxFZAkNLalBKb0JiZA0xkVAZDZD";
   let data = await fetch(url);
   let response = await data.json();
   let goToInstagram = (event) => {
+    // storing whatever's clicked in a variable
     let elementClicked = event.target;
-
+    // looping through IG API
     for (let j = 0; j < response.data.length; j++) {
       if (
+        // if user click is equal to the caption API or the URL of the iamge from the gallery
+        // open the instagram post itself
         elementClicked.src === response.data[j].media_url ||
         elementClicked.textContent === response.data[j].caption
       ) {
-        window.open(`${response.data[j].permalink}`)
+        window.open(`${response.data[j].permalink}`);
       }
     }
   };
@@ -187,14 +199,10 @@ async function instagram(event) {
     `;
 
     gallery.addEventListener("click", goToInstagram);
-    // let smallText = document.getElementById("small-text")
-    // imageTarget.addEventListener("click", goToInstagram)
-    // smallText.addEventListener("click", goToInstagram)
-
+ 
     allImages.push(eachImage);
     imageTarget.innerHTML = allImages;
   }
-
 }
 
 instagram();
