@@ -172,7 +172,9 @@ body,html{
 #menu-container{
     margin: 8rem 0rem 8rem 0rem;
 }
-
+#menu:hover{
+    transform: scale(1.3)
+}
 /* <!-- MENU SECTION ENDS HERE --> */
 
 /* <!-- REVIEW SECTION STARTS HERE --> */
