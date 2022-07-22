@@ -144,15 +144,54 @@
                     </div>
                     <!-- REVIEW SECTION ENDS HERE -->
             
-                    <!-- GALLERY SECTION STARTS HERE -->
-                    <div class="test">
-
-                    </div>
-               
-                    <!-- GALLERY SECTION ENDS HERE -->
-            
+             
             
                     <!-- CONTACT SECTION STARTS HERE -->
+                    <div class="form-container">
+                      <h1 id="contact-us" class="display-2 text-center"> CONTACT US</h1>
+                      <h6 id="white" class="text-center p-3 mb-4"> Need a quote? have something nice to say? Send an e-mail and we'll get back to you as soon as possible!</h6>
+                      <form  action="https://formspree.io/f/mqknrdej" method="POST" id="form" > 
+                        <div class="form-group mb-3">
+                         
+                          <label id="white" for ="exampleFormControlInput1">Name</label>
+                         <input name ="name" id="name" type="text" size="80"class="form-control" placeholder="ex: John Doe" required>
+                        </div>
+                        <div class="form-group mb-3">
+                         
+                         
+                           <label id="white" for="exampleFormControlInput1">Email address</label>
+
+                           <input name="email" id="email" type="email" class="form-control" id="exampleFormControlInput1"placeholder="name@example.com" size="80" required>
+                      </div>
+                      <div class="form-group mb-3">
+                        <label  id="white" for="exampleFormControlInput1">Phone Number</label>
+                        <input name= "Phone Number" type="text" class="form-control" id="exampleFormControlInput1"
+                        placeholder="1(555)-555-3521">
+                    </div>
+                    <div class="form-group">
+                      <label id="white" for="exampleFormControlTextarea1">Message</label>
+                          <textarea id ="message-height"style="resize: none;"name="Message" placeHolder="Your message here..." class="form-control"
+                          id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                      <div class="d-flex justify-content-end">
+
+                        <button id="formButton" type="submit" class="btn btn-primary mt-4">Submit</button>
+                      </div>
+                      </form>
+                    </div>
+       
+      <!-- <div class="form-group">
+          <div class="form-check">
+              <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
+              <label class="form-check-label" for="invalidCheck3">
+                  Agree to terms and conditions
+              </label>
+              <div class="invalid-feedback">
+                  You must agree before submitting.
+              </div>
+          </div>
+      </div> -->
+  </div>
                     <!-- CONTACT SECTION ENDS HERE -->
         </section>
 

@@ -263,4 +263,52 @@ body,html{
 
 
 /* <!-- CONTACT SECTION STARTS HERE --> */
+.form-container{
+    margin-top: 10rem;
+    height: 700px;
+    background-color: black;
+}
+
+#contact-us{
+    color: #e73487;
+    padding-top: 4rem;
+}
+#form{
+    width: 50%;
+    margin: 0 auto;
+    overflow-y: scroll;
+}
+#white{
+    color: white;
+}
+
+#formButton{
+    width: 105px;
+    background-color: #e73487;
+    border-radius: 20px;
+    border-color: #e73487;
+}
+#message-height{
+    height: 140px;
+
+}
+input{
+    max-width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+}
+
+#formButton:hover{
+    cursor: url("./images/pizza_mouse_hover.png") 16 0,auto; 
+    transform: scale(1.02) translateY(-1px);
+    background-color: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+}
+
+
+/* @media screen and (max-width: 792px) {
+    form {
+      width: 400px;
+      height: 40px;
+    }
+  } */
 /* <!-- CONTACT SECTION ENDS HERE -->  */

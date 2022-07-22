@@ -147,7 +147,7 @@ let opacityFade = function () {
     starContainerThree.style.opacity = fadeOpacity;
   }
 };
-setInterval(reviewGenerator, 10000);
+setInterval(reviewGenerator, 5000);
 setInterval(opacityFade, 10);
 
 // query params for yelp API
